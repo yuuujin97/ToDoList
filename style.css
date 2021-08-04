@@ -66,8 +66,17 @@ header {
 }
 
 .span__item {
+  width: 100%;
   font-size: 1.15rem;
   color: var(--gray-light-color);
+}
+
+.span__item.clicked {
+  text-decoration: line-through;
+}
+
+.span__item.clicked::before {
+  content: "";
 }
 
 .button__delete {

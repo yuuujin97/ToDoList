@@ -36,3 +36,10 @@ function deleteItemList(index_num) {
   item_list.splice(index_num, 1);
   showItemList();
 }
+
+let doneItemList = document.querySelector(".section__list");
+doneItemList.addEventListener("click", (event) => {
+  if (event.target.tagName === "LI" || "SPAN") {
+    event.target.classList.toggle("clicked");
+  }
+});
