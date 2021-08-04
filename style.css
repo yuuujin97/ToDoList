@@ -37,7 +37,7 @@ header {
 
 .input_box {
   width: 100%;
-  height: 50px;
+  height: 60px;
   padding: 0 2%;
   background-color: var(--gray-dark-color);
   color: var(--gray-light-color);
@@ -73,6 +73,7 @@ header {
 
 .span__item.clicked {
   text-decoration: line-through;
+  color: var(--pink-color);
 }
 
 .span__item.clicked::before {
@@ -90,4 +91,15 @@ header {
 .button__delete:hover {
   color: var(--pink-color);
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .section__input,
+  .section__list {
+    padding: 0;
+    margin: 0;
+  }
+  .input_box {
+    border-radius: 0;
+  }
 }
