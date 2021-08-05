@@ -1,11 +1,22 @@
 "use strict";
 
+const body = document.querySelector("body");
+const modal = document.querySelector(".modal");
+const modal_button = document.querySelector(".modal__button");
+const doneItemList = document.querySelector(".section__list");
+
+modal.addEventListener("click", closeModal);
+modal_button.addEventListener("click", closeModal);
+
 let item_list = [];
 
 function insertEvent() {
   let input_box = document.querySelector(".input_box");
   if (input_box.value === "") {
-    alert("값 입력바람");
+    modal.classList.toggle("show");
+    if (modal.classList.contains("show")) {
+      body.style.overflow = "hidden";
+    }
   } else {
     item_list.push(input_box.value);
     input_box.value = "";
@@ -37,7 +48,13 @@ function deleteItemList(index_num) {
   showItemList();
 }
 
-let doneItemList = document.querySelector(".section__list");
+function closeModal() {
+  modal.classList.toggle("show");
+  if (!modal.classList.contains("show")) {
+    body.style.overflow = "auto";
+  }
+}
+
 doneItemList.addEventListener("click", (event) => {
   if (event.target.tagName === "LI" || "SPAN") {
     event.target.classList.toggle("clicked");
