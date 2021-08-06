@@ -6,7 +6,6 @@ const modal_button = document.querySelector(".modal__button");
 const doneItemList = document.querySelector(".section__list");
 
 modal.addEventListener("click", closeModal);
-modal_button.addEventListener("click", closeModal);
 
 let item_list = [];
 
