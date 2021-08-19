@@ -2,7 +2,7 @@
 
 HTML, CSS, JavaScript만을 이용하여 간단한 To Do List를 구현하였다.
 
-완성된 To Do List : https://yuuujin97.github.io/ToDoList/
+⭐완성된 To Do List : https://yuuujin97.github.io/ToDoList/
 
 ---
 
