@@ -23,8 +23,6 @@ HTML, CSS, JavaScript만을 이용하여 간단한 To Do List를 구현하였다
 4. 빈 내용 입력시 모달창 띄움
    - 아무 내용을 입력하지 않고, Enter를 누르게 되면 'To Do List를 입력해 주세요!' 라는 문구가 적힌 모달창을 띄워진다.
 
-<br>
-
 ### Screenshot
 
 Desktop ver.
